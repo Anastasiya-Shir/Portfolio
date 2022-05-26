@@ -26,3 +26,4 @@ function showImage(i) {
 }
 
 showImage(counter)
+
