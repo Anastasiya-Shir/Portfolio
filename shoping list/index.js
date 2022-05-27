@@ -1,5 +1,4 @@
 let list = document.querySelector(".list");
-console.log(list)
 let input = document.querySelector("input");
 let pen = document.querySelector("img");
 
