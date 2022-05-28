@@ -1,8 +1,6 @@
 let input = document.querySelector("input");
-console.log(input)
 let imgContainer = document.querySelector(".photo")
 let inputValue;
-console.log(imgContainer)
 
 function imgCreate(data) {
   for (let i = 0; i < data.results.length; i++) {
@@ -27,9 +25,9 @@ input.addEventListener("keydown", (event) => {
       })
 
       .then(data => {
-        console.log(data)
         imgCreate(data);
       })
+
       .catch(error => console.log(error));
   }
 });
