@@ -35,6 +35,6 @@ let setT = setTimeout(function getDate(day = date.getDay(), hour = date.getHours
   }
 
   date = new Date();
-  setT = setTimeout(getDate, 2000, date.getDay(), date.getHours(), date.getMinutes());
+  setT = setTimeout(getDate, 2000);
 
 }, 0)
