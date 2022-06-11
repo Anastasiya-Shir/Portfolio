@@ -17,6 +17,7 @@ input.addEventListener("keydown", (event) => {
     li.innerHTML = inputValue;
     list.appendChild(li);
   };
+
 });
 
 list.addEventListener('click', (event) => {
