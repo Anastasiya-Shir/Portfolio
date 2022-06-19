@@ -4,7 +4,6 @@ let dayName = document.querySelector('#day');
 let hourClass = document.querySelector('#hour');
 let minuteClass = document.querySelector('#minute');
 let part = document.querySelector('#part');
-
 let setT = setTimeout(function getDate(day = date.getDay(), hour = date.getHours(), minutes = date.getMinutes()) {
   dayName.innerHTML = DAY_NAMES[day];
 
@@ -24,7 +23,6 @@ let setT = setTimeout(function getDate(day = date.getDay(), hour = date.getHours
     } else {
       hourClass.innerHTML = `0${hour - 12}`;
     }
-
     part.innerHTML = "PM";
   }
 
@@ -36,5 +34,4 @@ let setT = setTimeout(function getDate(day = date.getDay(), hour = date.getHours
 
   date = new Date();
   setT = setTimeout(getDate, 2000);
-
 }, 0)
