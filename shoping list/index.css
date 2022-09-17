@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Paris';
+  src: url(./fonts/Parisienne-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #8A2BE2;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  background-color: #E0FFFF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-all;
+  box-shadow: 5px 5px 8px #000;
+}
+
+h1 {
+  margin: 10px;
+  font-family: "Paris", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: 29%;
+  top: 55px;
+  cursor: pointer;
+}
+
+input {
+  font-family: "Paris", Arial, Helvetica, sans-serif;
+  color: #8A2BE2;
+  font-size: x-large;
+  margin: 5px;
+  width: 50%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 4px solid #00CED1;
+  background-color: #E0FFFF;
+}
+
+li {
+  font-family: "Paris", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  list-style: none;
+  float: left;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  float: left;
+  width: 100%;
+}
+
+ul li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+
+.active {
+  text-decoration: line-through;
+}
+
+@media(max-width:732px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media(max-width:732px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media(max-width:325px) {
+  h1 {
+    font-size: 15px;
+    margin: 3px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  input {
+    margin: 2;
+  }
+}
+
